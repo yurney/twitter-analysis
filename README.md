@@ -20,11 +20,11 @@ The steps below will help you set up your twitter account to be able to access t
 - Click "Create my access token." You can Read more about Oauth authorization.
 - Open twitterstream.py and set the variables corresponding to the consumer key, consumer secret, access token, and access secret.
  
-access_token_key = "<Enter your access token key here>"
-access_token_secret = "<Enter your access token secret here>"
+access_token_key = "Enter your access token key here"
+access_token_secret = "Enter your access token secret here"
  
-consumer_key = "<Enter consumer key>"
-consumer_secret = "<Enter consumer secret>"
+consumer_key = "Enter consumer key"
+consumer_secret = "Enter consumer secret"
  
 - Run the following and make sure you see data flowing and that no errors occur.  Stop the program with Ctrl-C once you are satisfied.
  
@@ -40,9 +40,9 @@ $ python twitterstream.py > output.txt
 
 You need to create with the above example a file with twitter data, let's say output.txt
 
-Run: $ python tweet_sentiment.py <sentiment_file> output.txt
+Run: $ python tweet_sentiment.py sentiment_file output.txt
 
-where <sentiment_file> is AFINN-111.txt or other file with sentiment rated words
+where sentiment_file is AFINN-111.txt or other file with sentiment rated words
 
 
 <h2>Derive the sentiment of new terms</h2>
@@ -50,7 +50,7 @@ where <sentiment_file> is AFINN-111.txt or other file with sentiment rated words
 
 Again, we need twitter data extracted from the stream.
 
-Run: $ python term_sentiment.py <sentiment_file> output.txt
+Run: $ python term_sentiment.py sentiment_file output.txt
  
 The script prints to stdout each term-sentiment pair, one pair per line, in the following format:        
          
@@ -62,7 +62,7 @@ The script prints to stdout each term-sentiment pair, one pair per line, in the 
 
 Given a file of tweets as an input proceed in the following way:
  
-Run: $ python frequency.py <tweet_file>
+Run: $ python frequency.py tweet_file
   
 The script prints to stdout each term-frequency pair, one pair per line, in the following format:
          
@@ -72,7 +72,7 @@ The script prints to stdout each term-frequency pair, one pair per line, in the 
 <h2>Getting the happiest State</h2>
 ---------------------------------
 
-Run: $ python happiest_state.py <sentiment_file> output.txt
+Run: $ python happiest_state.py sentiment_file output.txt
 
 The script prints the two letter state abbreviation to stdout of the happiest USA State.
 
@@ -82,7 +82,7 @@ The script prints the two letter state abbreviation to stdout of the happiest US
 
 Computes the ten most frequently occurring hash tags from the data in output.txt
   
-Run: $ python top_ten.py <tweet_file>
+Run: $ python top_ten.py tweet_file
 
 The script prints to stdout each hashtag-count pair, one per line, in the following format:
          
